@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icono.png" type="image/png">
+
+    <title>Ley Ampere</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titule"><strong>Ley de Ampère y sus aplicaciones a través de visualizaciones en realidad
+                aumentada</strong></h1>
+    </header>
+    <span class="ir-arriba icon-arrow-up"></span>
+    <nav class="  back-blue navbar navbar-expand-lg navbar-light justify-content-center">
+        <div style="width:auto ;" class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" text-center collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#Teoria">
+                            <h3>Ley de Ampère</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Instrucciones">
+                            <h3>Instrucciones</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#CodigoColor">
+                            <h3>Código de colores</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#Visualizaciones">
+                            <h3>Visualizaciones</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <section class="container" id="Teoria">
+        <div class="row">
+            <h2 class="subTitule text-center">Breve descripción de la ley de Ampère y sus aplicaciones</h2>
+            <p>
+                La ley de Ampère conduce a una de las cuatro leyes fundamentales del electromagnetismo.
+            </p>
+            <p>La ecuación de esta ley es la siguiente:</p>
+            <div align="center">
+                <img width="60%"
+                    src="https://latex.codecogs.com/gif.latex?\dpi{300}&space;\large&space;\oint&space;\vec{B}\cdot&space;d\vec{s}=\mu&space;_{0}i."
+                    title="\large \oint \vec{B}\cdot d\vec{s}=\mu _{0}i." />
+            </div>
+            <p>El círculo sobre el símbolo de integral representa una integral en una trayectoria cerrada, <img
+                    style="width: 12px;" src="img/Bvector.png"> es un vector de campo magnético, <img
+                    style="width: 20px;" src="img/dsvector.png"> es un vector diferencial de línea, <span
+                    style="font-style: italic;">&#956;<sub>0</sub></span> es la constante de permeabilidad del
+                vacío
+                e <span style="font-style:italic;">i</span> la corriente eléctrica.</p>
+
+            <p>La parte izquierda en la ecuación es la evaluación del producto escalar entre <img style="width: 12px;"
+                    src="img/Bvector.png"> y <img style="width: 20px;" src="img/dsvector.png">
+                para cada elemento infinitesimal ( <img style="width: 20px;" src="img/dsvector.png">) en el que
+                se
+                divide la trayectoria cerrada, sumando todas las contribuciones.
+            </p>
+            <p>En la parte derecha, <span style="font-style:italic;">i</span> es la corriente total que pasa por
+                los
+                alambres conductores que atraviesan la superficie encerrada por la trayectoria recorrida. Esta
+                trayectoria cerrada, imaginaria, se denomina anillo amperiano.</p>
+            <div align="center">
+                <img style="width: 60%;" src="img/trayectorias cerradas.png">
+                <p align="center" style="font-style: italic; text-align: center; font-size: 12px;">Ejemplos de
+                    trayectorias cerradas, se les denomina "cerradas" porque comienzan y terminan en un mismo
+                    punto.
+                </p>
+            </div>
+            <p>La ley de Ampère permite calcular la magnitud de un campo magnético de forma sencilla en
+                problemas
+                que tienen un alto grado de simetría. Esto permite escoger la forma del anillo amperiano de
+                manera
+                que el campo magnético sea constante a lo largo de toda la trayectoria, o en segmentos de ésta,
+                y
+                así pueda ser extraído de la integral. </p>
+
+            <p> Es posible que existan corrientes que pasan tanto fuera, como dentro del anillo, todas
+                contribuyen
+                al campo magnético en los puntos del anillo, sin embargo, el resultado de la integral sólo
+                depende
+                de las corrientes que atraviesan la suerficie delimitada por el anillo. Para una corriente
+                externa,
+                el producto <img style="width: 12px;" src="img/Bvector.png"><img style="width: 20px;"
+                    src="img/dsvector.png"> cambia de signo al recorrer el anillo y las diferentes
+                contribuciones se
+                cancelan.</p>
+
+            <p>Por otro lado, puede que dentro de un mismo anillo se encuentren corrientes con direcciones
+                opuestas,
+                por ello, se requiere usar la regla de la mano derecha para asignar el signo positivo o negativo
+                de
+                una corriente.<br></p>
+            <p>Dicha regla indica que, si ponemos el pulgar de la mano derecha en la misma dirección que la
+                corriente eléctrica, la curva formada por los demás dedos de la mano nos indicarón la forma y el
+                sentido de las líneas de campo, como observamos en la figura. Al ser un campo vectorial, el
+                campo
+                magnético se representa con una B en negritas o con una flecha sobre él.</p>
+            <div align="center">
+                <img width="40%" src="img/regladelamanoderecha.png">
+            </div>
+            <p>A continuación, podrás encontrar los enlaces correspondientes a seis visualizaciones en realidad
+                aumentada que representan distintas formas que puede tener un alambre conductor de corriente
+                (con
+                forma arbitraria, de recta, de solenoide y de toroide). Cuando una corriente pasa a través de
+                él, se
+                genera un campo magnético cuyas líneas se encuentran representadas en color verde. </p>
+
+            <p>En algunas visualizaciones, también aparecen anillos amperianos con distintas formas, de acuerdo
+                con
+                la simetría que tienen las líneas de campo magnético. </p>
+
+            <p>La intención de las visualizaciones es que puedas observar representaciones de lo que acabas de
+                aprender acerca de la ley de Ampère de una forma interactiva, en 3D y desde distintas
+                perspectivas,
+                para facilitar la comprensión de la situación física de cada problema.
+            </p>
+            <div>
+                <p style="font-style: italic; font-size: 13px;">
+                    <br>
+                    <br>
+                    Fuentes: <br> Halliday, D., Resnick, R. y Krane, K. (1999). Física Volumen 2. México: Compañía
+                    Editorial Continental. <br> Purcell, E. &amp; Morin, D. (2013). Electricity and magnetism.
+                    Estados
+                    Unidos de América: Cambridge University Press.
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <section class="container" id="Instrucciones">
+        <div class="row">
+            <h2 class="subTitule text-center">Instrucciones para las visualizaciones</h2>
+            <p>Para poder observar cualquiera de las visualizaciones en realidad aumentada (RA) que aparecen en esta
+                página de internet necesitas contar con:</p>
+
+
+            <div align="center" class="col">
+                <a
+                    href="https://drive.google.com/file/d/1gOBpPyrdpQYCCzaXdt1xfkYMfFNt-ISg/view?fbclid=IwAR2ZY6och_1lcVxkMgT8c-pCw90wgWoWh6c_XMc0m8hiHkQtBzKeECUvrkY"><img
+                        class="imgMarker" src="img/marker.png" alt=""></a>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>
+                        Marcador, ya sea que decidas imprimirlo o que pueda ser visible a
+                        través de una pantalla distinta a la que usarás para observar la RA, puedes
+                        descargar el
+                        marcador haciendo clic en la imagen
+
+                    </li>
+                    <li>
+                        Un dispositivo móvil o computadora con navegador de internet
+
+                    </li>
+
+                    <li>
+                        Conexión a internet
+                    </li>
+
+                    <li>
+                        La cámara integrada en tu dispositivo móvil, laptop o en su caso una webcam
+
+                    </li>
+
+                </ul>
+            </div>
+
+            <p><strong>Sugerencias:</strong></p>
+
+            <p>Recuerda que tú puedes imprimir el marcador del tamaño que prefieras, sólo debes tener cuidado de
+                mantenerlo completamente visible durante la visualización. Para obtener el tamaño que te
+                acomode, cambia la distancia del marcador a la cámara.</p>
+            <p>Puedes desplegar las visualizaciones en el dispositivo que prefieras. Si necesitas mayor libertad
+                de movimiento entre la cámara y el marcador, puedes usar un dispositivo móvil.
+            </p>
+
+            <h3><strong>Los pasos a seguir son los siguientes:</strong></h3>
+            <ol>
+                <li>Haz clic en el enlace a la visualización en RA que te interesa observar</li>
+                <li>Si la cámara o webcam no se activa automáticamente, selecciona la opción "Permitir usar la
+                    cámara" cuando el navegador de internet lo solicite"
+                    <a target="?_blank"
+                        href="https://drive.google.com/file/d/1v4Goh4Ymsv3HiomuIxZOtEhYVYaMAzQX/view?fbclid=IwAR1fDqq3elwIH0F2wJGVTn7Fjlv5bgDEs1GjseEBFGT5XNTT9whdsJWJkfg"><span>haz
+                            clic aquí para ver una imagen de ejemplo de este paso</span></a>
+                </li>
+                <li>Cuando la cámara o webcam comience a funcionar, coloca el marcador frente a ella para que
+                    sea reconocido</li>
+                <li>Una vez reconocido el marcador, podrás observar la visualización en RA</li>
+                <li>Puedes colocar el marcador frente a la cámara en distintas posiciones, acercarlo, alejarlo o
+                    girarlo de tal forma que puedas observar distintas partes o detalles en cada visualización</li>
+                <li>En las visualizaciones, indicamos con letras las cantidades físicas que representamos, pero
+                    para obtener un panorama más completo de estas cantidades puedes usar el "Código de colores"</li>
+            </ol>
+
+        </div>
+    </section>
+    <section class="container" id="CodigoColor">
+        <div class="row">
+            <h2 class="subTitule text-center">Código de colores</h2>
+            <p>Para entender las visualizaciones, es necesario conocer el significado de los colores en los
+                elementos representados, usa el siguiente código de colores:</p>
+            <p>Puedes dar clic a la imagen para ver el código de colores en una pestaña independiente. </p>
+            <div align="center">
+                <a href="https://docs.google.com/drawings/d/1kFYG-YasQXN-CPAuPyb4QrPCHWxYWmRaYXKVaM_FOiQ/edit?fbclid=IwAR0ZJgV4lES7q8ZsCp1bOONSJqr9a3JAwgvAMDu-i3jUdgBJaVGETj7q3yA"
+                    target="_blank"> <img width="100%" src="img/Codigo colores (4).png"></a>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="Visualizaciones">
+        <div class="row">
+            <h2 class="subTitule text-center">Visualizaciones en Realidad Aumentada</h2>
+            <p>Estas visualizaciones forman parte del proyecto EducAR, y su objetivo es facilitar a los estudiantes de
+                Electricidad y Magnetismo, particularmente quienes son de Ingeniería en Computación, el entendimiento de
+                la Ley de Ampère utilizando Realidad Aumentada. Todas las visualizaciones funcionan con un mismo
+                marcador.</p>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Corriente en un alambre de forma arbitraria
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                En esta visualización, la corriente es conducida a través de un conductor que tiene
+                                forma arbitraria, aparecen también, la representación de un elemento de corriente
+                                <img style="width: 22px;" src="img/idsvector.png"> como un pequeño vector de color
+                                azul dentro de la corriente, este elemento <img style="width: 22px;"
+                                    src="img/idsvector.png"> crea un campo magnético <img style="width: 20px;"
+                                    src="img/dBvector.png"> en un punto <span style="font-style: italic;">P</span>
+                            </p>
+
+
+                            <a href="https://alambre-forma-arbitraria.glitch.me/?fbclid=IwAR2hm2imzXSMlYa07gUo0IMTdjT_coAO4EKtjTYyve7t1F9gOXEXSTk46rM"
+                                class="btn btn-primary" role="button" data-bs-toggle="button">Ver visualizacion</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Alambre recto largo
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Se muestra la representación de una sección de alambre conductor recto, por el cual
+                                circula una corriente, con las líneas de campo magnético a su alrededor, como
+                                círculos concéntricos con centro en el eje del alambre, y un anillo amperiano por el
+                                cual atraviesa el conductor.</p>
+
+                            <a href="https://alambre-recto.glitch.me/?fbclid=IwAR33k3dg5vsR8UqASzt7_wndu1oVgjFIvAbjgHCJHbpoiBUebW8GHgZCjMM"
+                                class="btn btn-primary" role="button" data-bs-toggle="button">Ver visualizacion</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Solenoide
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Un solenoide consiste en un alambre conductor enrollado en hélice y apretado.
+                                En esta visualización, se muestra una sección de solenoide extendido y algunas líneas de
+                                campo magnético en su interior y a su alrededor.
+                            </p>
+
+                            <a href="https://solenoide.glitch.me/?fbclid=IwAR2JMkMgUJYobgsSLMhhERRUAj7-A67HbQ0NavDA2tLqUxk7Iw9t_Zv18Rs"
+                                class="btn btn-primary" role="button" data-bs-toggle="button">Ver visualizacion</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Solenoide corte longitudinal
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>En este caso, se puede observar al mismo solenoide, pero sin estar extendido y con un
+                                corte longitudinal para observar que el campo magnético en su interior es uniforme y
+                                sus líneas son paralelas al eje del solenoide.</p>
+                            <p>También, vemos un anillo amperiano en forma rectangular con líneas rojas punteadas,
+                                usado en este caso para calcular el campo magnético, aplicando la ley de Ampère.</p>
+                            <a href="https://solenoide-corte.glitch.me/?fbclid=IwAR363ujB35kAf5qngkXuc98FPSlOOYFEHCvEzfqon5twZp6XPoxPR4JyQpg"
+                                class="btn btn-primary" role="button" data-bs-toggle="button">Ver visualizacion</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Toroide
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Un toroide es, básicamente, un solenoide, pero doblado en forma de rosca, por lo
+                                tanto, las líneas de campo magnético en su interior ahora tendrán forma de círculos
+                                concéntricos. </p>
+
+                            <a href="https://toroide.glitch.me/?fbclid=IwAR1L-9FGGKdTt7jYHQNFvCJ8AHdLktv0hCkJlsY1-jALS-y2JG9Nt5OKnGg"
+                                class="btn btn-primary" role="button" data-bs-toggle="button">Ver visualizacion</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Toroide corte
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Si lo cortamos por la mitad (toroide con corte) podemos observar mejor por dentro las
+                                líneas de campo. Para hallar la magnitud del campo al interior del toroide, se
+                                aplica la ley de Ampère y usamos un anillo amperiano con forma de círculo, como el
+                                que observamos en ambas visualizaciones.</p>
+
+                            <a href="https://toroide-corte.glitch.me/?fbclid=IwAR3gJzRTvQyn1odORxnL9VICP4wBDq55XxmRY_2y_hmaOtuI7sw0K2WFuAw"
+                                class="btn btn-primary" role="button" data-bs-toggle="button">Ver visualizacion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="contacto">
+        <div class="row">
+            <h2 class="subTitule text-center">Información de Contacto</h2>
+            <div class="col-lg">
+                <h3>Direccion:</h3>
+            </div>
+            <div class="col-lg">
+                <p>Centro Tecnológico Aragón, segundo piso, Cubículos académicos 2, Cubículo 4, Facultad de Estudios
+                    Superiores Aragón, Universidad Nacional Autónoma de México, Avenida Rancho Seco S/N, Col.
+                    Impulsora Popular Avícola, Nezahualcóyotl, Estado de México 57130, México.</p>
+            </div>
+            <div class="col-lg">
+                <a target="_blank"
+                    href="https://www.facebook.com/cosmocta/?view_public_for=1819870644983707&amp;ref=page_internal">
+                    <img style="width: 60px; " src="img/f.png">
+                </a>
+                <a target="_blank" href="https://gpb-cosmo.github.io/person/">
+                    <img src="img/doc.png"></a>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="Agradecimiento">
+        <div class="row">
+            <h2 class="subTitule text-center">Créditos</h2>
+            <div class="card text-bg-primary  col-md">
+                <h5 class="card-header card-title">Gabriella Piccinelli Bocchi:</h5>
+                <div class="card-body">
+                    <h5 class=""></h5>
+                    <p class="card-text">Responsable académica, supervisión del contenido científico y de la
+                        construcción de los materiales</p>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                
+                <div class="card text-bg-primary  col-md">
+                    <h5 class="card-header card-title">Pedro Uriel Martínez Martínez:</h5>
+                    <div class="card-body">
+                        <p class="card-text">Supervisión de la construcción de los materiales</p>
+                    </div>
+                </div>
+                <div class="card text-bg-primary  col-md">
+                    <h5 class="card-header card-title">Carlos Alberto Hernández García: </h5>
+                    <div class="card-body">
+
+                        <p class="card-text">Construcción de la plataforma, actualizacion y modificacion</p>
+                    </div>
+                </div>
+                <div class="card text-bg-primary  col-md">
+                    <h5 class="card-header card-title">Damián Susano Martínez:</h5>
+                    <div class="card-body">
+
+                        <p class="card-text">Elaboración de los modelos en 3D y las visualizaciones en realidad
+                            aumentada
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="card text-bg-primary  col-md">
+                    <h5 class="card-header card-title">Alan Sandoval Almaráz y Gerardo Ángel Casillas Araiza:</h5>
+                    <div class="card-body">
+                        <h5 class=""></h5>
+                        <p class="card-text">Correcciones a los modelos 3D e incorporación de las visualizaciones en
+                            realidad aumentada a
+                            páginas web</p>
+                    </div>
+                </div>
+
+                <div class="card text-bg-primary  col-md">
+                    <h5 class="card-header card-title">René Jesús Pineda Ángeles: </h5>
+                    <div class="card-body">
+                        <p class="card-text">Información sobre la ley de Ampère y descripción de las visualizaciones en
+                            realidad aumentada</p>
+                    </div>
+                </div>
+                <div class="card text-bg-primary  col-md">
+                    <h5 class="card-header card-title">Blanca Paola Avila Cervantes y Juan Andrés Estévez Velázquez:
+                    </h5>
+                    <div class="card-body">
+
+                        <p class="card-text">Revisión de la presentación de los materiales y apoyo administrativo</p>
+                    </div>
+                </div>
+            </div>
+       
+
+
+        </div>
+    </section>
+    <footer align="center" style="background-color: black;">
+        <div style="color: azure;">
+            <h3>
+                Aplicaciones realizadas con el apoyo del Programa UNAM-DGAPA-PAPIME PE110418
+            </h3>
+            <img class="img-fluid maxheight:  text-center" alt="Responsive image" width="50%" src="img/pie.png">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"></a>
+            <p> Este obra está bajo una   <a class="text-light" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">licencia
+                de Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional</a>.</p>
+           
+        </div>
+
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/new.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
